@@ -1,3 +1,5 @@
+import os
+from dateutil.parser import parse
 class sort:
     def __init__(self):
         print("in constructor\n")
@@ -10,10 +12,20 @@ class sort:
                     dataset[j],dataset[j+1]=dataset[j+1],dataset[j]
         return dataset
 
-    def quickSort(self):
 
+x=sort()
 
-##checking again
-    
-    ##change made
-    ##check edit
+for filename in os.listdir("HW2_dataset"):
+    date = []
+    print(filename)
+    if filename.endswith(".log"):
+        with open("HW2_dataset/"+filename) as f:
+            lines=f.read().split("\n")
+            for line in lines:
+                if line:
+                    print(line.split(" ")[0] )
+                    print(type(line.split(" ")[0]))
+                    date.append(parse(line.split(" ")[0]))
+            sorted=x.bubble_sort(lines,date,len(date))
+            for i in sorted:
+                print(i)
