@@ -53,9 +53,9 @@ class sort:
         if l < r:
             m = (l + (r - 1)) // 2
 
-            self.mergeSort(dataset, timestamp_list, l, m)
-            self.mergeSort(dataset, timestamp_list, m + 1, r)
-            self.merge(dataset, timestamp_list, l, m, r)
+            mergeSort(dataset, timestamp_list, l, m)
+            mergeSort(dataset, timestamp_list, m + 1, r)
+            merge(dataset, timestamp_list, l, m, r)
 
 
 x=sort()
