@@ -11,7 +11,7 @@ class sort:
                     timestamp_list[j],timestamp_list[j+1]=timestamp_list[j+1],timestamp_list[j]
                     dataset[j],dataset[j+1]=dataset[j+1],dataset[j]
         return dataset
-
+##########################mergeSort#################################################################
     def merge(self,dataset, timestamp_list, l, m, r):
         n1 = m - l + 1
         n2 = r - m
@@ -57,6 +57,45 @@ class sort:
             mergeSort(dataset, timestamp_list, m + 1, r)
             merge(dataset, timestamp_list, l, m, r)
 
+    # use of MergeSort in our programme : mergeSort(lines, date, 0, len(date) - 1)
+
+#########################quickSort##########################################
+    def partition(self,dataset,timestamp_list, low, high):
+        i = (low - 1)
+        pivot = timestamp_list[high]  # pivot
+
+        for j in range(low, high):
+
+            # If current element is smaller than the pivot
+            if timestamp_list[j] < pivot:
+                # increment index of smaller element
+                i = i + 1
+                dataset[i], dataset[j] = dataset[j], dataset[i]
+                timestamp_list[i], timestamp_list[j] = timestamp_list[j], timestamp_list[i]
+
+        dataset[i + 1], dataset[high] = dataset[high], dataset[i + 1]
+        timestamp_list[i + 1], timestamp_list[high] = timestamp_list[high], timestamp_list[i + 1]
+        return (i + 1)
+
+
+    # The main function that implements QuickSort
+    # arr[] --> Array to be sorted,
+    # low  --> Starting index,
+    # high  --> Ending index
+
+    # Function to do Quick sort
+    def quickSort(self,dataset,timestamp_list, low, high):
+        if low < high:
+            # pi is partitioning index, arr[p] is now
+            # at right place
+            pi = partition(self,dataset,timestamp_list, low, high)
+
+            # Separately sort elements before
+            # partition and after partition
+            self.quickSort(dataset,timestamp_list, low, pi - 1)
+            self.quickSort(dataset,timestamp_list, pi + 1, high)
+
+#use of quicksort in our programme : quickSort(lines, date, 0, len(date) - 1)
 
 x=sort()
 

@@ -28,10 +28,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.Merge_sort_geeks">
+  <component name="RunManager" selected="Python.quick">
     <configuration name="Merge_sort_geeks" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="hw2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -74,6 +76,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="quick" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hw2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/quick.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="hw2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -97,6 +120,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.quick" />
         <item itemvalue="Python.Merge_sort_geeks" />
         <item itemvalue="Python.merge_sort" />
         <item itemvalue="Python.test" />
@@ -133,30 +157,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579226073916" />
-    <state width="680" height="282" key="GridCell.Tab.0.bottom" timestamp="1579271642767">
+    <state width="948" height="298" key="GridCell.Tab.0.bottom" timestamp="1579276866457">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="680" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579271642767" />
-    <state width="680" height="282" key="GridCell.Tab.0.center" timestamp="1579271642767">
+    <state width="948" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579276866457" />
+    <state width="948" height="298" key="GridCell.Tab.0.center" timestamp="1579276866457">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="680" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579271642767" />
-    <state width="680" height="282" key="GridCell.Tab.0.left" timestamp="1579271642767">
+    <state width="948" height="298" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579276866457" />
+    <state width="948" height="298" key="GridCell.Tab.0.left" timestamp="1579276866457">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="680" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579271642767" />
-    <state width="680" height="282" key="GridCell.Tab.0.right" timestamp="1579271642767">
+    <state width="948" height="298" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579276866457" />
+    <state width="948" height="298" key="GridCell.Tab.0.right" timestamp="1579276866457">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="680" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579271642767" />
+    <state width="948" height="298" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579276866457" />
     <state x="293" y="98" key="SettingsEditor" timestamp="1579226221133">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="293" y="98" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579226221133" />
-    <state x="661" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1579272756058">
+    <state x="661" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1579273528740">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="661" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579272756058" />
+    <state x="661" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579273528740" />
     <state x="701" y="164" key="refactoring.ChangeSignatureDialog" timestamp="1579229206816">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
