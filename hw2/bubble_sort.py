@@ -1,6 +1,7 @@
 import os
 import sys
 from dateutil.parser import parse
+import datetime
 sys.setrecursionlimit(10**6)
 class sort:
     def __init__(self):
@@ -49,6 +50,57 @@ class sort:
             self.quickSort(dataset, timestamp_list, pi + 1, high)
             return dataset
 
+    def merge(self,dataset, timestamp_list, l, m, r):
+        n1 = m - l + 1
+        n2 = r - m
+        L = [0] * (n1)
+        L2 = [0] * (n1)
+        R = [0] * (n2)
+        R2 = [0] * (n2)
+
+        for i in range(0, n1):
+            L[i] = timestamp_list[l + i]
+            L2[i] = dataset[l + i]
+
+        for j in range(0, n2):
+            R[j] = timestamp_list[m + 1 + j]
+            R2[j] = dataset[m + 1 + j]
+
+        i = 0
+        j = 0
+        k = l
+
+        while i < n1 and j < n2:
+            if L[i] <= R[j]:
+                dataset[k] = L2[i]
+                timestamp_list[k]=L[i]
+                i += 1
+            else:
+                dataset[k] = R2[j]
+                timestamp_list[k] = R[j]
+                j += 1
+            k += 1
+
+        while i < n1:
+            dataset[k] = L2[i]
+            timestamp_list[k] = L[i]
+            i += 1
+            k += 1
+
+        while j < n2:
+            dataset[k] = R2[j]
+            timestamp_list[k] = R[j]
+            j += 1
+            k += 1
+
+    def mergeSort(self,dataset, timestamp_list, l, r):
+        if l < r:
+            m = int((l + (r - 1)) / 2)
+
+            self.mergeSort(dataset, timestamp_list, l, m)
+            self.mergeSort(dataset, timestamp_list, m + 1, r)
+            self.merge(dataset, timestamp_list, l, m, r)
+        return dataset
 
 x=sort()
 for filename in os.listdir("HW2_dataset"):
@@ -57,14 +109,37 @@ for filename in os.listdir("HW2_dataset"):
     print(filename)
     if filename.endswith(".log"):
         with open("HW2_dataset/"+filename) as f:
+            #print('Timestamp before reading data: {:%Y-%m-%d %H:%M:%S.%f}'.format(datetime.datetime.now()))
+            enter = datetime.datetime.now()
             lines=f.read().split("\n")
+            #print('Timestamp after reading data: {:%Y-%m-%d %H:%M:%S.%f}'.format(datetime.datetime.now()))
+            exit = datetime.datetime.now()
+            #print("read time taken  ",exit - enter)
+            sub = exit - enter
+            print('read time taken  ', +sub.microseconds)
+            enter = datetime.datetime.now()
             for line in lines:
                 if line:
     #                print(line.split(" ")[0] )
      #               print(type(line.split(" ")[0]))
                     date.append(parse(line.split(" ")[0]))
             #sorted=x.bubble_sort(lines,date,len(date))
-            sorted = x.quickSort(lines, date, 0,len(date)-1)
+            #print('Timestamp before sorting data: {:%Y-%m-%d %H:%M:%S.%f}'.format(datetime.datetime.now()))
+            exit = datetime.datetime.now()
+            #print("parse time taken  ", exit - enter)
+            sub = exit - enter
+            print('parse time taken  ', +sub.microseconds)
+            enter = datetime.datetime.now()
+            #print(enter)
+            #sorted = x.quickSort(lines, date, 0,len(date)-1)
+            #sorted = x.bubble_sort(lines, date, len(date))
+            sorted = x.mergeSort(lines, date,0,len(date)-1)
+            #print('Timestamp after sorting data: {:%Y-%m-%d %H:%M:%S.%f}'.format(datetime.datetime.now()))
+            exit = datetime.datetime.now()
+            #print(exit)
+            #print("sort time taken  ", exit - enter)
+            sub = exit - enter
+            print('sort time taken  ', +sub.microseconds)
         f.close()
         f=open("HW2_dataset/"+filename+"_sorted",'+w')
         for i in sorted:
