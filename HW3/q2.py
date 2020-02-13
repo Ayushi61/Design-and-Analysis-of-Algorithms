@@ -10,7 +10,7 @@ if __name__ == "__main__":
         file_read.close()
         pattern = (r'^\s*CHAPTER[\s](.*)[\s]*(.*)')
         patter_2 = (r'^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})\.\s.*[^0-9]*')
-        pattern_3=(r'^[0-9]+[\.]{1}(.*)')
+        pattern_3=(r'^[0-9]+[\.|\)]{1}\s(.*)')
         new_file = []
         count = 0
         sub_string = input("Enter dialogue:")
@@ -26,9 +26,6 @@ if __name__ == "__main__":
                 match2 = re.search(patter_2, line[k])
                 match3=re.search(pattern_3,line[k])
                 if (match):
-                    #print("in")
-                    #print(match.group(1))
-                    #if(match.group(1))
                     new_line = line[k]
                     check_not_rom=match.group(1)
                     cnt_check=len(check_not_rom.split(" "))
