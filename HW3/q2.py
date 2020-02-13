@@ -8,9 +8,9 @@ if __name__ == "__main__":
         lines = file_read.read()
         line_split=re.split('[\r\n]{2}',lines)
         file_read.close()
-        pattern = (r'CHAPTER[\s](.*)')
+        pattern = (r'^\s*CHAPTER[\s](.*)[\s]*(.*)')
         patter_2 = (r'^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})\.\s.*[^0-9]*')
-        pattern_3=(r'[0-9]+[\.]{1}(.*)')
+        pattern_3=(r'^[0-9]+[\.]{1}(.*)')
         new_file = []
         count = 0
         sub_string = input("Enter dialogue:")
@@ -25,16 +25,16 @@ if __name__ == "__main__":
                 match = re.search(pattern, line[k],re.IGNORECASE)
                 match2 = re.search(patter_2, line[k])
                 match3=re.search(pattern_3,line[k])
-                if (match or match3):
+                if (match):
+                    #print("in")
                     #print(match.group(1))
                     #if(match.group(1))
                     new_line = line[k]
-                    if(match):
-                        check_not_rom=match.group(1)
-                    else:
-                        check_not_rom=match3.group(1)
+                    check_not_rom=match.group(1)
+                    cnt_check=len(check_not_rom.split(" "))
                     patt=(r'^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})')
-                    if(re.match(patt,check_not_rom) != None):
+
+                    if(cnt_check == 1):
                         if(line_split[i+1].count("\n")==0):
                             line_2=line_split[i+1]
                         else:
@@ -44,7 +44,21 @@ if __name__ == "__main__":
                 elif match2:
                     new_line=line[k]
                     line_2=""
+                elif match3:
+                    # print(match.group(1))
+                    # if(match.group(1))
+                    new_line = line[k]
+                    check_not_rom = match3.group(1)
+                    cnt_check = len(check_not_rom.split(" "))
+                    patt = (r'^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})')
 
+                    if (cnt_check == 1):
+                        if (line_split[i + 1].count("\n") == 0):
+                            line_2 = line_split[i + 1]
+                        else:
+                            line_2 = ""
+                    else:
+                        line_2 = ""
             if(line_split[i].find(sub_string) != -1):
                 line_split[i] = re.sub(u'[\u201c\u201d]', '"', line_split[i])
                 dialogue=re.findall(r'("[^"]*["]*)', line_split[i], re.DOTALL)
