@@ -1,0 +1,48 @@
+import hashlib
+import sys
+def hash10(word):
+    obj=hashlib.sha3_512(word.encode())
+    return (int(obj.hexdigest(),16)%1024)
+
+#hash10("Ayushi")
+#hash10("\n\n\n")
+#hash10("Hello!")
+#hash10("")
+
+def hashfile(file):
+    f = open(file, 'r')
+    Lines = f.readlines()
+    list=[]
+    for line in Lines:
+        word=line.strip()
+        #print(word)
+        x=hash10(word)
+        #print(x)
+        list.append(x)
+        #print(list)
+    return list
+
+def diff(file1,file2):
+    #f1=[]
+    #f2=[]
+    f3=[]
+    f1=hashfile(file1)
+    f2=hashfile(file2)
+    print(f1)
+    print(f2)
+    l1=len(f1)
+    l2=len(f2)
+    for i in range(l1):
+        for j in range(l2):
+            if f1[i]==f2[j]:
+                #print(f1[i])
+                #print(f2[j])
+                f3.append(i+1)
+                f3.append(j+1)
+    l3=len(f3)
+    for i in range(0,l3,2):
+        print(f3[i],f3[i+1])
+
+
+diff(input(),input())
+
