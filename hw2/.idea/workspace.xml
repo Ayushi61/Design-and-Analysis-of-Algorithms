@@ -19,6 +19,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+<<<<<<< HEAD
+=======
+    <option name="UPDATE_TYPE" value="MERGE" />
+>>>>>>> ayushi
   </component>
   <component name="ProjectId" id="1WV7LMwBHAdsuPHzJenqApH29B2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -33,8 +37,18 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Python.quick">
     <configuration name="Merge_sort_geeks" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+=======
+<<<<<<< HEAD
+  <component name="RunManager">
+    <configuration name="bubble_sort" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+=======
+  <component name="RunManager" selected="Python.quick">
+    <configuration name="Merge_sort_geeks" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+>>>>>>> 209c29455e68c37e9955c8d02eb52e08f91e07bd
+>>>>>>> ayushi
       <module name="hw2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -46,6 +60,12 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bubble_sort.py" />
+=======
+>>>>>>> ayushi
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Merge_sort_geeks.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -110,6 +130,10 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+<<<<<<< HEAD
+=======
+>>>>>>> 209c29455e68c37e9955c8d02eb52e08f91e07bd
+>>>>>>> ayushi
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -119,6 +143,19 @@
       <method v="2" />
     </configuration>
     <recent_temporary>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      <list>
+        <item itemvalue="Python.bubble_sort" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+=======
+>>>>>>> ayushi
       <list>
         <item itemvalue="Python.quick" />
         <item itemvalue="Python.Merge_sort_geeks" />
@@ -130,6 +167,10 @@
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
+<<<<<<< HEAD
+=======
+>>>>>>> 209c29455e68c37e9955c8d02eb52e08f91e07bd
+>>>>>>> ayushi
         <serviceView>
           <treeState>
             <expand />
@@ -186,4 +227,29 @@
     </state>
     <state x="701" y="164" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579229206816" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="WindowStateProjectService">
+    <state width="948" height="298" key="GridCell.Tab.0.bottom" timestamp="1579635359335">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="948" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579635359335" />
+    <state width="948" height="298" key="GridCell.Tab.0.center" timestamp="1579635359335">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="948" height="298" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579635359335" />
+    <state width="948" height="298" key="GridCell.Tab.0.left" timestamp="1579635359335">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="948" height="298" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579635359335" />
+    <state width="948" height="298" key="GridCell.Tab.0.right" timestamp="1579635359335">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="948" height="298" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579635359335" />
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579478167820">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579478167820" />
+  </component>
+>>>>>>> ayushi
 </project>
