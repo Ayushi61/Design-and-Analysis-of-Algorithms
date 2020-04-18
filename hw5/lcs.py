@@ -33,4 +33,5 @@ def backtrack(c, x, y, i, j):
 def lcs(x, y):
     """Get the longest common subsequence of x and y"""
     c = lcslen(x, y)
+    print(backtrack(c, x, y, len(x)-1, len(y)-1))
     return backtrack(c, x, y, len(x)-1, len(y)-1)
