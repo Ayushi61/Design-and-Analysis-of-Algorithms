@@ -9,7 +9,8 @@ from functools import partial
 
 from lcs import lcslen
 
-
+arr1=[]
+arr2=[]
 def print_diff(c, x, y, i, j):
     """Print the diff using LCS length matrix by backtracking it"""
 
@@ -32,6 +33,7 @@ def print_diff(c, x, y, i, j):
         print("- " + x[i].strip("\n"))
 
 def print_diff1(c, x, y, i, j):
+
     if i < 0 and j < 0:
         #print("in2")
         return ""
@@ -42,8 +44,9 @@ def print_diff1(c, x, y, i, j):
     elif x[i] == y[j]:
         #print("in")
         print_diff1(c, x, y, i - 1, j - 1)
-        print("1 " + str(i+1))
-        print("2 " + str(j+1))
+        arr1.append(i+1)
+        arr2.append(j+1)
+        #print("2 " + str(j+1))
     elif c[i][j - 1] >= c[i - 1][j]:
         print_diff1(c, x, y, i, j - 1)
     elif c[i][j - 1] < c[i - 1][j]:
@@ -54,13 +57,19 @@ def diff(x, y,str1,str2):
     c = lcslen(x, y)
     #print(c)
     print("question part d bonus results")
+
     return print_diff(c, str1, str2, len(x)-1, len(y)-1)
 
 def diff2(x, y):
     c = lcslen(x, y)
     #print(c)
     print("question part c results")
-    return print_diff1(c, x, y, len(x)-1, len(y)-1)
+    print_diff1(c, x, y, len(x)-1, len(y)-1)
+    for i in range(len(arr1)):
+        print(str(arr1[i]) + " ")
+    for i in range(len(arr2)):
+        print(str(arr2[i]) + " ")
+    return ""
 
 def usage():
     print("Usage: {} <file1> <file2>".format(sys.argv[0]))
@@ -71,4 +80,5 @@ f2,str2=hashfile(sys.argv[2])
 #print(f1)
 #print(f2)
 diff2(f1,f2)
+
 diff(f1,f2,str1,str2)
