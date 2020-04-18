@@ -9,8 +9,6 @@ from functools import partial
 
 from lcs import lcslen
 
-# Print without newline because input files already have it
-_print = partial(print, end='')
 
 def print_diff(c, x, y, i, j):
     """Print the diff using LCS length matrix by backtracking it"""
@@ -33,6 +31,25 @@ def print_diff(c, x, y, i, j):
         print_diff(c, x, y, i - 1, j)
         print("- " + x[i].strip("\n"))
 
+def print_diff1(c, x, y, i, j):
+    if i < 0 and j < 0:
+        #print("in2")
+        return ""
+    elif i < 0 and j >=0:
+        print_diff1(c, x, y, i, j - 1)
+    elif j < 0 and i >=0:
+        print_diff1(c, x, y, i - 1, j)
+    elif x[i] == y[j]:
+        #print("in")
+        print_diff1(c, x, y, i - 1, j - 1)
+        print("1 " + str(i+1))
+        print("2 " + str(j+1))
+    elif c[i][j - 1] >= c[i - 1][j]:
+        print_diff1(c, x, y, i, j - 1)
+    elif c[i][j - 1] < c[i - 1][j]:
+        print_diff1(c, x, y, i - 1, j)
+
+
 def diff(x, y,str1,str2):
     c = lcslen(x, y)
     #print(c)
@@ -43,7 +60,7 @@ def diff2(x, y):
     c = lcslen(x, y)
     #print(c)
     print("question part c results")
-    return print_diff(c, x, y, len(x)-1, len(y)-1)
+    return print_diff1(c, x, y, len(x)-1, len(y)-1)
 
 def usage():
     print("Usage: {} <file1> <file2>".format(sys.argv[0]))

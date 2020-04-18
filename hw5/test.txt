@@ -1,3 +1,3 @@
-checking hash
 test file
+checking hash
 here
