@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 from hash_func import hash10
 import sys
 def hashfile(filename):

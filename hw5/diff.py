@@ -1,7 +1,7 @@
+#!/usr/bin/env python3
 ''' reference
 https://alex.dzyoba.com/blog/writing-diff/
 '''
-##!/usr/bin/python3
 from hashfile import hashfile
 import sys
 #!/usr/bin/env python3

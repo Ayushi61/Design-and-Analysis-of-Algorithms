@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 '''
 reference: https://www.pythoncentral.io/hashing-strings-with-python/
 '''
