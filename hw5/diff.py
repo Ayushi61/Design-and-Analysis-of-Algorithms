@@ -66,9 +66,11 @@ def diff2(x, y):
     print("question part c results")
     print_diff1(c, x, y, len(x)-1, len(y)-1)
     for i in range(len(arr1)):
-        print(str(arr1[i]) + " ")
+        print(str(arr1[i]) + " ",end=' ')
+    print()
     for i in range(len(arr2)):
-        print(str(arr2[i]) + " ")
+        print(str(arr2[i]) + " ",end=' ')
+    print()
     return ""
 
 def usage():
