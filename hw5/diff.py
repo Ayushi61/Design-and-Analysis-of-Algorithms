@@ -4,7 +4,6 @@ https://alex.dzyoba.com/blog/writing-diff/
 '''
 from hashfile import hashfile
 import sys
-#!/usr/bin/env python3
 from functools import partial
 
 from lcs import lcslen

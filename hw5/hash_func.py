@@ -1,7 +1,4 @@
 #!/usr/bin/env python3
-'''
-reference: https://www.pythoncentral.io/hashing-strings-with-python/
-'''
 import hashlib
 def hash10(word):
     obj=hashlib.sha3_512(word.encode())
