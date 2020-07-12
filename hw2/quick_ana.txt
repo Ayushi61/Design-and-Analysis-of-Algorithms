@@ -1,0 +1,81 @@
+The Merge sort analysis data for syslog10k is as following: 
+warm up load times are: 
+["0.005981", "0.004986"]
+ Main exectution Load times are 
+["0.005027", "0.005983", "0.004031", "0.005014", "0.00503", "0.004986", "0.005029", "0.004995", "0.005032", "0.005027"]
+ warm up sort times are: 
+["0.114694", "0.09678"]
+ Main exectution sort times are 
+["0.161568", "0.102721", "0.088764", "0.088771", "0.088762", "0.087771", "0.088783", "0.087764", "0.096754", "0.088767"]
+The Merge sort analysis data for syslog1Ma is as following: 
+warm up load times are: 
+["0.01396", "0.010018"]
+ Main exectution Load times are 
+["0.010017", "0.009984", "0.008969", "0.010019", "0.009972", "0.010006", "0.010001", "0.009992", "0.009999", "0.009984"]
+ warm up sort times are: 
+["1.342436", "1.343408"]
+ Main exectution sort times are 
+["1.333433", "1.478058", "1.349412", "1.337404", "1.356371", "1.34839", "1.328467", "1.351395", "1.34341", "1.538966"]
+The Merge sort analysis data for syslog1Mb is as following: 
+warm up load times are: 
+["0.010954", "0.01002"]
+ Main exectution Load times are 
+["0.009979", "0.010012", "0.011966", "0.01099", "0.010017", "0.009986", "0.010016", "0.009963", "0.009999", "0.010016"]
+ warm up sort times are: 
+["0.078789", "0.088756"]
+ Main exectution sort times are 
+["0.091755", "0.085759", "0.097772", "0.087765", "0.083778", "0.088807", "0.115648", "0.086775", "0.081789", "0.081787"]
+The Merge sort analysis data for syslog1Mc is as following: 
+warm up load times are: 
+["0.010952", "0.009996"]
+ Main exectution Load times are 
+["0.010014", "0.010959", "0.00896", "0.009011", "0.010016", "0.0", "0.009982", "0.010016", "0.012966", "0.010017"]
+ warm up sort times are: 
+["1.468358", "1.295571"]
+ Main exectution sort times are 
+["1.149935", "1.305522", "1.156896", "1.154944", "1.968289", "1.164881", "1.159908", "1.360363", "1.181845", "1.19877"]
+The Merge sort analysis data for syslog200k is as following: 
+warm up load times are: 
+["0.111661", "0.114689"]
+ Main exectution Load times are 
+["0.11465", "0.125625", "0.114733", "0.116688", "0.117697", "0.121674", "0.11968", "0.122642", "0.110703", "0.114654"]
+ warm up sort times are: 
+["1.90188", "1.964746"]
+ Main exectution sort times are 
+["1.899888", "1.946795", "2.000627", "2.041535", "2.017605", "1.966709", "2.055503", "2.029578", "1.954736", "2.076414"]
+The Merge sort analysis data for syslog20k is as following: 
+warm up load times are: 
+["0.009988", "0.011009"]
+ Main exectution Load times are 
+["0.011005", "0.010951", "0.010986", "0.011008", "0.010014", "0.010997", "0.010007", "0.01001", "0.010017", "0.009998"]
+ warm up sort times are: 
+["0.224401", "0.273282"]
+ Main exectution sort times are 
+["0.190471", "0.216387", "0.198481", "0.181511", "0.178549", "0.175498", "0.186463", "0.201472", "0.185522", "0.179522"]
+The Merge sort analysis data for syslog2500 is as following: 
+warm up load times are: 
+["0.001003", "0.001022"]
+ Main exectution Load times are 
+["0.000999", "0.002048", "0.000998", "0.001037", "0.001053", "0.00103", "0.001042", "0.000997", "0.001998", "0.001994"]
+ warm up sort times are: 
+["0.020944", "0.020919"]
+ Main exectution sort times are 
+["0.019946", "0.021917", "0.021955", "0.029945", "0.020943", "0.022982", "0.028923", "0.029922", "0.02889", "0.027938"]
+The Merge sort analysis data for syslog5000 is as following: 
+warm up load times are: 
+["0.002991", "0.002972"]
+ Main exectution Load times are 
+["0.001991", "0.003996", "0.002032", "0.00203", "0.003036", "0.002028", "0.002038", "0.002033", "0.002027", "0.002039"]
+ warm up sort times are: 
+["0.040905", "0.042885"]
+ Main exectution sort times are 
+["0.040904", "0.082777", "0.0748", "0.040915", "0.04089", "0.039902", "0.041889", "0.040893", "0.0399", "0.039893"]
+The Merge sort analysis data for syslog50k is as following: 
+warm up load times are: 
+["0.024978", "0.026886"]
+ Main exectution Load times are 
+["0.024928", "0.026942", "0.026883", "0.026932", "0.025886", "0.025925", "0.026928", "0.029917", "0.024901", "0.024948"]
+ warm up sort times are: 
+["0.401932", "0.405879"]
+ Main exectution sort times are 
+["0.405876", "0.424825", "0.440778", "0.421873", "0.432807", "0.471776", "0.402927", "0.434827", "0.417909", "0.416904"]
